@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowchart</title>
+</head>
+
+<body>
+
+    <div id="can"></div>
+    <div id="buttons">
+
+        <button id="add_shape_open"> <b>add shape</b></button>
+
+    </div>
+
+
+
+
+    <!--add_shape_modal. START-->
+    <dialog id="add_shape_modal">
+        <label for="add_shape_color">color:</label> <input type="text" id="add_shape_color" required
+            autocomplete="off"><br>
+        <label for="add_shape_width">width:</label><input type="number" id="add_shape_width" required
+            autocomplete="off"><br>
+        <label for="add_shape_height">height:</label><input type="number" id="add_shape_height" required
+            autocomplete="off"><br>
+        <label for="add_shape_height">name:</label><input type="text" id="add_shape_name(id)" required
+            autocomplete="off"><br>
+        <label for="add_shape_text_content">Text Content:</label><textarea type="text" id="add_shape_text_content" required
+                autocomplete="off"></textarea><b></b>
+        <label for="add_shape_text_color">Text Color:</label><input type="text" id="add_shape_text_color" required
+                autocomplete="off"><br>
+        <button id="add_shape_submit">submit</button>
+        <button id="add_shape_close">cancel</button>
+    </dialog>
+    <!--add_shape_modal. END-->
+
+
+
+<!--context_menu_modal. START-->
+<dialog id="context_menu_modal">
+<center><h1 id="context_menu_element_headding">Headding</h1></center>
+<button id="context_menu_remove">Delete</button><br>
+<button id="context_menu_edit">Edit</button><br><br><br><br><br><br><br><br><br><br>
+<button id ="context_menu_cancel">Cancel</button>
+
+
+
+</dialog>
+
+
+
+<!--context_menu_modal. END-->
+
+
+
+<!--context_menu_modal_edit. START-->
+<dialog id="edit_modal">
+    <center><h1 id="edit_element_headding">Headding2</h1></center>
+    <label for="edit_textcontent">text:</label><textarea id="edit_textcontent"></textarea><br>
+    <label for="edit_width">width:</label><input type="number" id="edit_widh" required
+    autocomplete="off"><br>
+    <label for="edit_height">height:</label><input type="number" id="edit_height" required
+    autocomplete="off"><br>
+    <label for="edit_name">name:</label><input type="number" id="edit_name" required
+    autocomplete="off"><br>
+    <button id ="edit_cancel">Cancel</button>
+
+
+
+</dialog>
+
+
+
+
+
+<!--context_menu_modal_edit. END-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Adding Scripts. START-->
+    <script type="module" src="script.js"></script>
+    <script type="module" src="filler.js"></script>
+    <script type="module" src="add_shape.js"></script>
+    <script type="module" src="close_shape.js"></script>
+    <script type="module" src="context_menu.js"></script>
+    <!--Adding Scripts. END-->
+
+    <!--Adding Styles. START-->
+    <link rel="stylesheet" href="style.css">
+    <!--Adding Styles. END-->
+
+
+
+</body>
+
+</html>
